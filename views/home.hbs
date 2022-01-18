@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- phone css -->
+  <link rel="stylesheet" type="text/css" media=" screen and (min-width:1300px) and (max-width: 1500px)"
+    href="./css/landing_pc.css">
+  <link rel="stylesheet" type="text/css" media=" screen and (max-width: 1300px)" href="./css/landing_phone.css">
+  <!-- part3 link -->
+  <link rel="stylesheet" href="./social-media-icons.css">
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <title>Landing Page</title>
+  <style type="text/css">
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      border-radius: 11%;
+      box-shadow: -20px -20px 60px #b3b3b3,
+        20px 20px 60px #ffffff;
+    }
+
+    body {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1349' height='1195' preserveAspectRatio='none' viewBox='0 0 1349 1195'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1026%26quot%3b)' fill='none'%3e%3crect width='1349' height='1195' x='0' y='0' fill='rgba(182%2c 195%2c 221%2c 1)'%3e%3c/rect%3e%3cpath d='M1349 0L1007.95 0L1349 160.94z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1007.95 0L1349 160.94L1349 554.65L549.23 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M549.23 0L1349 554.65L1349 604.8299999999999L529.32 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M529.32 0L1349 604.8299999999999L1349 700.56L310.69000000000005 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1195L592.55 1195L0 822.74z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 822.74L592.55 1195L856.5999999999999 1195L0 465.33z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 465.3299999999999L856.5999999999999 1195L1024.04 1195L0 368.38999999999993z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 368.3899999999999L1024.04 1195L1170.12 1195L0 217.91999999999987z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1026'%3e%3crect width='1349' height='1195' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    }
+
+    .container-nav-grad {
+      padding: 1000px;
+    }
+
+    /* part1 */
+    .part1 {
+
+      margin: 10px 10px;
+      padding: 10px 10px
+    }
+
+    .coldis {
+      color: #52fc27;
+    }
+
+    .card1 {
+      margin-left: 100px;
+    }
+
+    .part2 {
+      margin: 10px 200px;
+      padding: 30px 30px;
+      border-radius: 53px;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='949' height='188' preserveAspectRatio='none' viewBox='0 0 949 188'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1029%26quot%3b)' fill='none'%3e%3crect width='949' height='188' x='0' y='0' fill='rgba(224%2c 224%2c 224%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c259.103C47.703%2c257.105%2c82.634%2c216.881%2c122.387%2c190.438C161.44%2c164.46%2c206.865%2c145.719%2c230.956%2c105.474C256.351%2c63.051%2c261.333%2c12.183%2c258.645%2c-37.187C255.77%2c-89.981%2c251.317%2c-147.867%2c215.066%2c-186.355C179.125%2c-224.515%2c120.321%2c-223.732%2c69.794%2c-237.695C20.179%2c-251.406%2c-28.792%2c-280.706%2c-78.542%2c-267.491C-128.61%2c-254.192%2c-163.753%2c-210.094%2c-193.578%2c-167.737C-221.306%2c-128.358%2c-237.1%2c-82.719%2c-242.355%2c-34.845C-247.482%2c11.861%2c-243.509%2c59.561%2c-223.176%2c101.921C-203.069%2c143.809%2c-167.146%2c174.219%2c-129.158%2c200.974C-89.761%2c228.721%2c-48.146%2c261.12%2c0%2c259.103' fill='%23b3b3b3'%3e%3c/path%3e%3cpath d='M949 387.224C989.48 385.052 1034.385 395.71799999999996 1067.156 371.855 1099.654 348.19100000000003 1103.06 302.442 1117.142 264.788 1130.159 229.983 1150.716 196.523 1146.54 159.598 1142.312 122.21 1113.829 94.276 1094.227 62.16 1070.313 22.979000000000013 1061.304-32.379999999999995 1018.795-49.69999999999999 976.463-66.94800000000001 927.123-44.584 887.293-22.155 852.188-2.3870000000000005 837.564 38.15799999999999 810.225 67.75 781.679 98.649 732.315 114.472 723.141 155.526 713.952 196.645 747.799 233.576 764.527 272.246 781.645 311.819 785.811 362.183 822.402 384.99 858.96 407.776 905.984 389.533 949 387.224' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1029'%3e%3crect width='949' height='188' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+      transition: all 1s;
+    }
+
+    .part2:hover {
+      transform: scale(1.02);
+    }
+
+
+    /* part 3 */
+    .social-menu {
+      background-image: lightgrey;
+      margin-top: 1rem;
+      padding: 5rem;
+    }
+
+    .social-menu ul {
+      position: absolute;
+      top: 160%;
+      left: 50%;
+      padding: 0;
+      margin: 1rem 1rem;
+      transform: translate(-50%, -50%);
+      display: flex;
+
+    }
+
+    .social-menu ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    .social-menu ul li .fab {
+      font-size: 30px;
+      line-height: 60px;
+      transition: .3s;
+      color: #000;
+    }
+
+    .social-menu ul li .fab:hover {
+      color: #fff;
+    }
+
+    .social-menu ul li a {
+      position: relative;
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #fff;
+      text-align: center;
+      transition: .6s;
+      box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    }
+
+    .social-menu ul li a:hover {
+      transform: translate(0, -10%);
+    }
+
+    .social-menu ul li:nth-child(1) a:hover {
+      background-color: rgba(0, 0, 0, 0.829);
+    }
+
+    .social-menu ul li:nth-child(2) a:hover {
+      background-color: #0077b5;
+    }
+
+    .social-menu ul li:nth-child(3) a:hover {
+      background-color: #E4405F;
+    }
+
+    .social-menu ul li:nth-child(4) a:hover {
+      background-color: rgb(19, 80, 248);
+    }
+
+
+
+    /* cards css */
+    /*Button styling*/
+    /* #outer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .inner {
+    display: inline-block;
+  }
+  
+  .Btn {
+    padding: 0;
+    border: none;
+    width: 350px;
+    transition: 0.9s;
+    height: 250px;
+    margin: 25px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+  }
+  
+  .Btn:hover {
+    cursor: pointer;
+    width: 350px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+  }
+   */
+    /* hover scale animation*/
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar sticky-top navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">CodeNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contests">Contests</a>
+          </li>
+        </ul>
+        <div class="mx-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/Login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- part 1 -->
+  <div class="container my-4">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 ">
+        <h2 class="text-dark" class="featurette-heading d-flex justify-content-center align-items-center">
+          <b>CodeNow</b>&nbsp<span class="text-dark"></span></h2>
+        <h2 class="text-dark">A platform where you can participate in various coding competitions and you can host your
+          contests too.
+        </h2>
+        <p class="lead">
+          <a class="btn  btn-dark" href="/login" role="button">Join Now</a>
+        </p>
+      </div>
+      <div class="col-md-5 order-md-2">
+        <img class="img-fluid" src="./images/landing_img.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- part -2 -->
+  <br>
+  <br>
+  <div class="part2">
+    <h3>
+      Join CodeNow community to improve your coding and programming skills.
+    </h3>
+  </div>
+
+  <!-- part 3 -->
+  <div class="container px-4 py-5" id="custom-cards">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          style="background-image: url('https://source.unsplash.com/900x400/?programming');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Host Your Contest</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small>In simple steps.</small>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          style="background-image: url('https://source.unsplash.com/900x400/?black wallpaper');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Participate Now</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small>Never Miss the Opportunity !</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          style="background-image: url('https://source.unsplash.com/900x400/?black space');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Group Contest</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small>Journey From Newbie To Pro.</small>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- part 4 ends -->
+
+  <!-- part 4  cards-->
+
+
+
+  <div class="social-menu">
+    <ul>
+      <li><a href="https://github.com/NeoShubh" target="blank"><i class="fab fa-github"></i></i></a></li>
+      <li><a href="https://www.linkedin.com/in/shubham-rathore-1a25111a9/" target="blank"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.instagram.com/royalrathore107/" target="blank"><i class="fab fa-instagram"></i></a></li>
+
+      <li><a href="https://www.facebook.com/profile.php?id=100036683740884"><i class="fab fa-facebook"
+            target="blank"></i></a></li>
+    </ul>
+  </div>
+
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- fonts link -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+	<title>Preview challenge | codechef</title>
+</head>
+
+<style type="text/css">
+   
+   body{
+  font-family: 'Baloo Bhaina 2', cursive;
+   background-color: lightgray;
+}
+
+	.setchallenge{
+		margin: 1rem 1rem;
+		padding: 1rem 1rem;
+		width: 1000px;
+    background-color: lightgrey;
+box-shadow:  -7px -7px 14px #a1a1a1,
+             7px 7px 14px #ffffff;
+	}
+
+  @media (min-width: 360px)and(max-width: 480px){
+    .setchallenge{
+   margin: 1rem -2rem;
+    padding: 1rem 1rem;
+    width: 1000px;
+    background-color: lightgrey;
+box-shadow:  -7px -7px 14px #a1a1a1,
+             7px 7px 14px #ffffff;
+  
+  }}
+</style>
+<body>
+   <!-- navbar -->
+       <nav class="navbar navbar-expand-lg navbar sticky-top navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">CodeNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="       #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto ">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contests">Contests</a>
+          </li>
+        </ul>
+        <div class="mx-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- end of navbar -->
+<div class="setchallenge">
+<ul class="list-group">
+
+  <li class="list-group-item list-group-item-danger">
+    <h1><strong>Problem Name : Three Boxes</strong></h1>
+  </li>
+  <li class="list-group-item list-group-item-success">
+    <h3>Problem Statement :</h3>
+    <h4>Chef has 3 boxes of sizes A, B, and C respectively. He puts the boxes in bags of size D (A≤B≤C≤D). Find the minimum number of bags Chef needs so that he can put each box in a bag. A bag can contain more than one box if the sum of sizes of boxes in the bag does not exceed the size of the bag.</h4>
+  </li>
+  <li class="list-group-item list-group-item-primary">
+    <h5>Input format :</h5><h6>
+The first line contains T denoting the number of test cases. Then the test cases follow.
+Each test case contains four integers A, B, C, and D on a single line denoting the sizes of the boxes and bags.</h6></li>
+  <li class="list-group-item list-group-item-primary"><h5>Output format :</h5><h6>
+For each test case, output on a single line the minimum number of bags Chef needs.</h6></li>
+  <li class="list-group-item list-group-item-success"><h5>Constraints</h5><h6>
+1≤T≤100
+<br>
+1≤A≤B≤C≤D≤100</h6></li>
+  <li class="list-group-item list-group-item-secondary"><h5>Sample Input</h5><h6>Sample Input 1 <br>
+3
+<br>
+2 3 5 10
+<br>
+1 2 3 5
+<br>
+3 3 4 4</h6></li>
+  <li class="list-group-item list-group-item-secondary"><h5>Sample Output</h5><h6>Sample Output 1 <br>
+1<br>
+2<br>
+3</h6></li>
+  <li class="list-group-item list-group-item-success"><h5>Explnation</h5><h6> 
+Test case 1: The sum of sizes of boxes is 2+3+5=10 which is equal to the size of a bag. Hence Chef can put all three boxes in a single bag.
+<br>
+Test case 2: Chef can put boxes of size 1 and 3 in one bag and box of size 2 in another bag.
+<br>
+Test case 3: Chef puts all the boxes in separate bags as there is no way to put more than one box in a single bag.
+ 
+</h6></li>
+</ul>
+</div>
+
+<!-- ide -->
+
+
+<!-- ide ends -->
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

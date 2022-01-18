@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- css for login and signup -->
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <title>Problems | CodeNow</title>
+  <style type="text/css">
+    /*css for styling the home page front lines (temporary)*/
+    body {
+      background - color: lightgray;
+    }
+
+    .train {
+      text - shadow: -3px 1px 0 #000, 1px 1px 0 #000, 1px -3px 0 #000, -3px -3px 0 #000;
+    }
+
+    #container {
+      bottom: 3%;
+      display: block;
+      margin: auto;
+      padding: 2rem 2rem;
+      width: 50rem;
+      border-radius: 10px;
+      height: 63rem;
+      background: linear-gradient(145deg, #f0f0f0, #cacaca);
+      box-shadow: 5px 5px 20px #929292,
+        -5px -5px 20px #ffffff;
+    }
+
+    .set_picture {
+      border - radius: 8px;
+      background: #e0e0e0;
+      box-shadow: inset 8px 8px 16px #c5c5c5,
+        inset -8px -8px 16px #fbfbfb;
+      margin: 20px 0px;
+      padding: 2rem 2rem;
+      width: 733px;
+      height: 21rem;
+      border-radius: 10px;
+
+    }
+
+    .setter_problem {
+      border - radius: 8px;
+      background: #e0e0e0;
+      box-shadow: inset 8px 8px 16px #c5c5c5,
+        inset -8px -8px 16px #fbfbfb;
+      margin: 20px 0px;
+      padding: 2rem 2rem;
+      width: 733px;
+      height: 33rem;
+      border-radius: 10px;
+    }
+
+    .hover-img {
+      background - color: #000;
+      color: #fff;
+      display: inline-block;
+      margin: -12px -2px;
+      padding: 6px 6px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      width: 676px;
+      height: 296px;
+    }
+
+    .hover-img * {
+      box - sizing: border-box;
+      transition: all 0.45s ease;
+    }
+
+    .hover-img:before,
+    .hover-img:after {
+      background - color: rgba(0, 0, 0, 0.5);
+      border-top: 32px solid rgba(0, 0, 0, 0.5);
+      border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      transition: all 0.3s ease;
+      z-index: 1;
+      opacity: 0;
+      transform: scaleY(2);
+    }
+
+    .hover-img img {
+      vertical - align: top;
+      max-width: 100%;
+      backface-visibility: hidden;
+    }
+
+    .hover-img figcaption {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      align-items: center;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.1em;
+      opacity: 0;
+      z-index: 2;
+      transition-delay: 0.1s;
+      font-size: 24px;
+      font-family: sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hover-img:hover:before,
+    .hover-img:hover:after {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .hover-img:hover>img {
+      opacity: 0.7;
+    }
+
+    .hover-img:hover figcaption {
+      opacity: 1;
+    }
+
+    a {
+      text - decoration: none;
+      content: black;
+    }
+
+    .typewriter-effect {
+      display: flex;
+      justify-content: center;
+      font-family: monospace;
+    }
+
+    .typewriter-effect>.text {
+      max - width: 0;
+      animation: typing 3s steps(var(--characters)) infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .typewriter-effect:after {
+      content: " |";
+      animation: blink 1s infinite;
+      animation-timing-function: step-end;
+    }
+
+    @keyframes typing {
+
+      75 %,
+      100 % {
+        max- width: calc(var(--characters) * 1ch);
+      }
+    }
+
+    @keyframes blink {
+
+      0 %,
+      75 %,
+      100 % {
+        opacity: 1;
+      }
+
+      25% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar sticky-top navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">CodeNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="       #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contests">Contests</a>
+          </li>
+        </ul>
+        <div class="mx-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/signup">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <!-- end of navbar -->
+  <!-- part1 -->
+  <section id="container">
+    <div class="typewriter-effect">
+      <div class="text" id="typewriter-text"></div>
+    </div>
+
+    <div class="set_picture">
+      <!-- <div class="typewriter-effect">
+                      <div class="text" id="typewriter-text"></div>
+                    </div>
+ -->
+      <figure class="hover-img">
+        <img src="https://source.unsplash.com/676x296/?black background" />
+        <figcaption>
+          <h3>Welcome User</h3>
+          <br>
+          <h5>Here is your contest problem section</h5>
+        </figcaption>
+      </figure>
+    </div>
+
+    <hr>
+    <div class="setter_problem">
+
+
+      <table class="table">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Problem Number</th>
+            <th scope="col">Problem Name</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each pro}}
+            <tr class="table-light">
+              <td>{{this.problemName}}</td>
+              <td><a href="/contests/editcontest/editproblem/{{this.problemName}}">edit problem</a></td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+
+
+    </div>
+  </section>
+
+  <br>
+
+
+  <!-- part1ends -->
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    const typeWriter = document.getElementById('typewriter-text');
+    const text = ' &quot; Hover The Image 😀 &quot;';
+
+    typeWriter.innerHTML = text;
+    typeWriter.style.setProperty('--characters', text.length);
+
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

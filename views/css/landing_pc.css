@@ -1,0 +1,140 @@
+body {
+background-image: linear-gradient(to bottom, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb);
+}
+
+  .container-nav-grad {
+    padding: 1000px;
+  }
+
+  /* part1 */
+  .part1 {
+    
+    margin: 10px 10px;
+    padding: 10px 10px
+  }
+
+  .coldis {
+    color: #52fc27;
+  }
+
+  .card1 {
+    margin-left: 100px;
+  }
+
+  .part2{
+    margin: 10px 200px;
+    padding: 30px 30px;
+   border-radius: 53px;
+background: #e0e0e0;
+    box-shadow:  26px 26px 51px #8f8f8f,
+             -26px -26px 51px #ffffff;
+      transition: all 3s;
+  }
+
+  .part2:hover {
+    transform: scale(1.03); 
+    box-shadow: inset 26px 26px 51px #8f8f8f,
+            inset -26px -26px 51px #ffffff;
+
+  }
+
+
+/* part 3 */
+.social-menu{
+    background-image: lightgrey;
+    margin-top:2.5rem ;
+    padding: 5rem;
+}
+.social-menu ul{
+    position: absolute;
+    top: 210%;
+    left: 50%;
+    padding: 0;
+    margin: 1rem 1rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+   
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: rgb(19, 80, 248);
+}
+
+
+
+  /* cards css */
+  /*Button styling*/
+  /* #outer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .inner {
+    display: inline-block;
+  }
+  
+  .Btn {
+    padding: 0;
+    border: none;
+    width: 350px;
+    transition: 0.9s;
+    height: 250px;
+    margin: 25px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+  }
+  
+  .Btn:hover {
+    cursor: pointer;
+    width: 350px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+  }
+   */
+  /* hover scale animation*/
+  
+ 

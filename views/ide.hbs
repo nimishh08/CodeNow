@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>IDE | CodeNow</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: #474554;
+    }
+
+    #container {
+        border: 2px solid yellow;
+        width: 82rem;
+        height: 80rem;
+        margin: 2rem 1rem;
+        padding: 0rem 0rem;
+    }
+
+    /* .box{
+     display: inline-block;
+   } */
+    textarea {
+        background: url(http://i.imgur.com/2cOaJ.png);
+        background-attachment: local;
+        background-repeat: no-repeat;
+        padding-left: 35px;
+        padding-top: 10px;
+        border-color: #ccc;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .textarea-wrapper {
+        display: inline-block;
+        background-image: linear-gradient(#F9F9F9 57%, #F9F9F9 50%);
+        background-size: 100% 32px;
+        background-position: left 10px;
+        margin-top: 2px;
+        margin-bottom: 20px;
+    }
+
+    #setide {
+        position: fixed;
+        bottom: 31px;
+        margin: 0rem 1rem -0.2rem 46rem;
+        padding: 0px 2px;
+        border-radius: 9px;
+        background: #C5C2D5;
+        box-shadow: inset -6px -6px 21px #a7a5b5, inset 6px 6px 21px #e3dff5;
+        width: 570px;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+    }
+
+    #setprob {
+        border-radius: 9px;
+        margin: 2rem 3rem;
+        padding: 1rem 1rem;
+        width: 40rem;
+        background: #c5c2d5;
+        box-shadow: inset -6px -6px 21px #a7a5b5, inset 6px 6px 21px #e3dff5;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #000000;
+        border-color: #1b1e23;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .setform {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .alert {
+        position: relative;
+        padding: 1rem 1rem 10rem 1rem;
+        margin-bottom: 1rem;
+        margin-right: 15.5rem;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
+
+    .form-select {
+        display: block;
+        width: 95%;
+        padding: .375rem 2.25rem .375rem .75rem;
+        -moz-padding-start: calc(0.75rem - 3px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: right .75rem center;
+        background-size: 16px 12px;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .setheader {
+        color: white;
+        margin: 3rem 0rem 1rem 12rem;
+        padding: 1rem 2rem;
+        width: 19rem;
+        height: 4rem;
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar sticky-top navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="bootstrap.html">CodeNow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="       #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contests.html">Contests</a>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="Landing_home.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- second nav header -->
+    <div class="container-fluid">
+        <h3 class="setheader"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="7 8 3 12 7 16" />
+                <polyline points="17 8 21 12 17 16" />
+                <line x1="14" y1="4" x2="10" y2="20" />
+            </svg> CodeNow <span class="badge bg-primary">IDE</span></h3>
+    </div>
+    <!-- ends -->
+    <!-- part 1starts -->
+    <section id="setprob">
+        <ul class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                <h3>{{problem_name}}</h3>
+            </button>
+            <li class="list-group-item list-group-item-info">
+                <h5>Problem statement</h5>
+                <pre>{{problem_statement}}</pre>
+            </li>
+            <li class="list-group-item list-group-item-light">
+                <h5>Input Format</h5>
+                <pre> {{input_format}}</pre>
+            </li>
+            <li class="list-group-item list-group-item-light">
+                <h5>Output Format</h5>
+                <pre> {{output_format}}</pre>
+            </li>
+            <li class="list-group-item list-group-item-light">
+                <h5>Constraints</h5>
+                <pre> {{constraints}} </pre>
+            </li>
+            <li class="list-group-item list-group-item-light">
+                <h5>Sample Input</h5>
+                <pre> {{sample_input}} </pre>
+            </li>
+            <li class="list-group-item list-group-item-light">
+                <h5>Sample Output</h5>
+                <pre> {{sample_output}} </pre>
+            </li>
+            <li class="list-group-item list-group-item-dark">
+                <h5>Explnation</h5>
+                <pre>{{explanation}}</pre>
+                </li>
+        </ul>
+    </section>
+    <!-- part 1ends -->
+    <!-- part2 -->
+    <div id="setide" class="box">
+        <form action="/submitCode" method="POST" class="setform">
+        <input type="hidden" name="problem_name" value="{{problem_name}}">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option value="2" selected>C++</option>
+            </select>
+            <div class="textarea-wrapper">
+                <textarea rows="25" cols="75" spellcheck="false" name="code">
+</textarea>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <input type="submit" class="btn  btn-sm btn-outline-success" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>

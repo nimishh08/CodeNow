@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- css for login and signup -->
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <title>SignUp | CodeNow</title>
+  <style type="text/css">
+    /*css for styling the home page front lines (temporary)*/
+    body{
+      background-color: lightgray;
+    }
+    .train {
+      text-shadow: -3px 1px 0 #000, 1px 1px 0 #000, 1px -3px 0 #000, -3px -3px 0 #000;
+    }
+
+    .settle {
+      padding-top: 1px;
+    }
+
+   
+     .card{
+     box-shadow:  19px 19px 43px #8f8f8f,
+             -19px -19px 43px #ffffff;
+             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1349' height='1195' preserveAspectRatio='none' viewBox='0 0 1349 1195'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1030%26quot%3b)' fill='none'%3e%3crect width='1349' height='1195' x='0' y='0' fill='rgba(170%2c 175%2c 183%2c 1)'%3e%3c/rect%3e%3cpath d='M1349 0L1001.85 0L1349 410.3z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1001.85 0L1349 410.3L1349 622.13L485.35 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M485.35 0L1349 622.13L1349 687.51L472.1 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M472.1 0L1349 687.51L1349 752.65L315.26 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1195L204.02 1195L0 750.8399999999999z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 750.8399999999999L204.02 1195L812.59 1195L0 689.3599999999999z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 689.3599999999999L812.59 1195L1128.08 1195L0 272.3599999999999z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 272.3599999999999L1128.08 1195L1190.3 1195L0 179.8599999999999z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1030'%3e%3crect width='1349' height='1195' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+             height: 30rem;
+             width: 50rem;
+           }
+      .row -0{
+        background-color: #e0e0e0;
+      }
+      .form-control-lg {
+    min-height: calc(1rem + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    width: 18rem;
+}
+
+.form-label {
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+    font-size: 15px;
+}
+.mb-4 {
+    margin-bottom: 0.3rem!important;
+}
+.setbtn{
+  margin-top: 10px;
+  }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+ <nav class="navbar navbar-expand-lg navbar sticky-top navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/landingpage">CodeNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="       #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contests">Contests</a>
+          </li>
+        </ul>
+        <div class="mx-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/signup">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <div class="alert alert-primary alert-dismissible fade show" role="alert">
+  <strong>Hello Sir!</strong> Sign Up Now To join CodeNow Community.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+  <!--Login Modal -->
+  <section class="vh-1" >
+    <div class="container py-3 h-80" >
+      <div class="row d-flex justify-content-center align-items-center h-100" >
+        <div class="col col-xl-10" >
+          <div class="card"  style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="./images/signup_img.jpg"alt="SignUp" class="img-fluid"
+                  style="border-radius: 1rem 0 0 1rem;" />
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+
+                  <form action="/register" method="POST">
+                    <h5 class="fw-normal mb-3 " style="letter-spacing: 1px;">Create your account</h5>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example17">Name</label>
+                      <input type="text" name='name' id="form2Example17" class="form-control form-control-lg"
+                        placeholder="enter your name" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example17">Email address</label>
+                      <input type="email" name='email' id="form2Example17" class="form-control form-control-lg"
+                        placeholder="name@email.com" />
+                      
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example27">Password</label>
+                      <input type="password" name='password' id="form2Example27" class="form-control form-control-lg"
+                        placeholder="ex.piyu$942" />
+                     
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example27">Confirm Password</label>
+                      <input type="password" name='cpassword' id="form2Example27" class="form-control form-control-lg"
+                        placeholder="ex.piyu$942" />
+                    
+                    </div>
+                      
+                    <div class="setbtn">
+                      <input class="btn btn-dark btn-block" type="submit" value='SignUP'>
+                    </div>
+
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Already have an account <a href="/login"
+                        style="color: #393f81;">Login here</a></p>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- end of login and signup -->
+  <!-- end of footer -->
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

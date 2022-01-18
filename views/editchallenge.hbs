@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>add challenges | CodeNow</title>
+
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar sticky-top navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">CodeNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="       #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto ">
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contests">Contests</a>
+          </li>
+        </ul>
+        <div class="mx-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+
+
+
+
+  <div class="card" style="width: 60rem;">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Give information about Problem.</strong></h5>
+
+    </div>
+    <ul class="list-group list-group-flush">
+
+      <li class="list-group-item">
+        <h4><strong>Create your Problem</strong></h4>
+        <br>
+        <form action="/updateproblem" method="POST">
+          <input type="hidden" name="contestName" value="{{contestName}}" />
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><strong>Problems Name</strong></label>
+            <textarea class="form-control" name="problem_name" id="exampleFormControlTextarea1"
+              rows="5">{{problem_name}}</textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><strong>Score</strong></label>
+            <textarea class="form-control" name="score" id="exampleFormControlTextarea1" rows="1">{{score}}</textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><strong>Description</strong></label>
+            <textarea class="form-control" name="problem_statement" id="exampleFormControlTextarea1"
+              rows="5">{{problem_statement}}</textarea>
+          </div>
+          <div class="mb-3">
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Input Format</strong></label>
+              <textarea class="form-control" name="input_format"
+                id="exampleFormControlTextarea1" rows="5">{{input_format}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Output Format</strong></label>
+              <textarea class="form-control" name="output_format"
+                id="exampleFormControlTextarea1" rows="5">{{output_format}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Constraints</strong></label>
+              <textarea class="form-control" name="constraints" id="exampleFormControlTextarea1"
+                rows="5">{{constraints}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Sample Input</strong></label>
+              <textarea class="form-control" name="sample_input"
+                id="exampleFormControlTextarea1" rows="5">{{sample_input}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case:1</strong></label>
+              <textarea class="form-control" name="testcase1" id="exampleFormControlTextarea1" rows="2">{{testcase1}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case:2</strong></label>
+              <textarea class="form-control" name="testcase2" id="exampleFormControlTextarea1" rows="2">{{testcase2}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case:3</strong></label>
+              <textarea class="form-control" name="testcase3" id="exampleFormControlTextarea1" rows="2">{{testcase3}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case:4</strong></label>
+              <textarea class="form-control" name="testcase4" id="exampleFormControlTextarea1" rows="2">{{testcase4}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case Output:1</strong></label>
+              <textarea class="form-control" name="testcaseo1" id="exampleFormControlTextarea1" rows="2">{{testcaseo1}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case Output:2</strong></label>
+              <textarea class="form-control" name="testcaseo2" id="exampleFormControlTextarea1" rows="2">{{testcaseo2}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case Output:3</strong></label>
+              <textarea class="form-control" name="testcaseo3" id="exampleFormControlTextarea1" rows="2">{{testcaseo3}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Test Case Output:4</strong></label>
+              <textarea class="form-control" name="testcaseo4" id="exampleFormControlTextarea1" rows="2">{{testcaseo4}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Sample Output</strong></label>
+              <textarea class="form-control" name="sample_output" 
+                id="exampleFormControlTextarea1" rows="5">{{sample_output}}</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Explanation</strong></label>
+              <textarea class="form-control" name="explaination"
+                id="exampleFormControlTextarea1" rows="5">{{explaination}}</textarea>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <input type="submit" class="btn btn-primary" value="Update">&nbsp
+            </div>
+        </form>
+      </li>
+      <li class="list-group-item"><a class="btn btn-outline-success" href="/previewchallenge" role="button">Preview</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
