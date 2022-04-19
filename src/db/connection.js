@@ -1,4 +1,4 @@
 const mongoose =require('mongoose');
-mongoose.connect("mongodb+srv://minor:minor%401234@cluster0.qei85.mongodb.net/codenow?retryWrites=true&w=majority")
+mongoose.connect(MongoAtlasURL)
 .then(()=> console.log('connection successfull'))
 .catch((err)=>  console.log(err));
