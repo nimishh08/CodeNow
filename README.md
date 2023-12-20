@@ -6,7 +6,7 @@ Steps to run our project:
 
 Step 1- Install NodeJs in your system.
 
-Step 2- Download the zip file of project from github https://github.com/jainsayam/CodeNow.git
+Step 2- Download the zip file of project from github https://github.com/Nimishpandit/CodeNow.git
 
 Step 3- Extract zip file on your local computer.
 
